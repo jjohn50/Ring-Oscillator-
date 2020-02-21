@@ -1,0 +1,33 @@
+.include Mosis_tsmc_180nm.model
+
+MN1 O H GND GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN2 N G O GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN3 M F N GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN4 L E M GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN5 K D L GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN6 J C K GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN7 I B J GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+MN8 Y A I GND NMOS L=0.18um W=3.2um AD=1.2E-12 AS=1.2E-12 PD=7.2um PS=7.2um
+
+MP1 Y A VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP2 Y B VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP3 Y C VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP4 Y D VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP5 Y E VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP6 Y F VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP7 Y G VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+MP8 Y H VDD VDD PMOS L=0.18um W=0.8um AD=3.2E-13 AS=3.2E-13 PD=2.4um PS=2.4um
+
+Cout Y GND 1pF
+
+Vvdd VDD GND 3.3
+VinA A GND dc 0 pulse 0 3.3 0ns 0.1ns 0.1ns 90ns 200ns
+VinB B GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+VinC C GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+VinD D GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+VinE E GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+VinF F GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+VinG G GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+VinH H GND dc 0 pulse 0 3.3 20ns 0.1ns 0.1ns 90ns 200ns
+
+.tran .1ns 100ns
